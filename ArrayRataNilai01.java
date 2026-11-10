@@ -29,8 +29,8 @@ public class ArrayRataNilai01 {
             if (nilaiMhs[i] > 70) {
                 L++;
             }
-        System.out.println("Jumlah mahasiswa yang lulus: " + L);
         }
+        System.out.println("Jumlah mahasiswa yang lulus: " + L);
         if (rata2 >= 85) {
             System.out.println("SANGAT BAIK");
         } else if (rata2 >= 70) {
