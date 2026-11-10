@@ -9,7 +9,7 @@ public class Tugas2 {
 
         System.out.println("=== DAFTAR MENU ===");
         for (int i = 0; i < menu.length; i++) {
-            System.out.println((i + 1) + ". " + menu[i] + " - Rp" + harga[i]);
+            System.out.println((i + 1) + ". " + menu[i]);
         }
 
         System.out.print("\nCari menu: ");
