@@ -25,7 +25,7 @@ public class SearchNilai01 {
             }
         }
         if (!ditemukan) {
-            System.out.println("Nilai " + cari + " tidak ditemukan.");
+            System.out.println("Nilai " + cari + " tidak ditemukan. Rentang nilai: "+ nilai[0] + " hingga " + nilai[n - 1]);
         }
         scanner.close();
     }
