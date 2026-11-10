@@ -16,13 +16,22 @@ public class ArrayRataNilai01 {
         System.out.println("Rata-rata: " + rata2);
         int tertinggi = nilaiMhs[0];
         int terendah = nilaiMhs[0];
-        for (int i = 1; i<nilaiMhs.length; i++) {
-            if (nilaiMhs[i] > tertinggi) tertinggi = nilaiMhs[i];
-            if (nilaiMhs[i] < tertinggi) terendah = nilaiMhs[i];
+        for (int i = 1; i < nilaiMhs.length; i++) {
+            if (nilaiMhs[i] > tertinggi)
+                tertinggi = nilaiMhs[i];
+            if (nilaiMhs[i] < terendah)
+                terendah = nilaiMhs[i];
         }
         System.out.println("Nilai tertinggi: " + tertinggi);
         System.out.println("Nilai terendah: " + terendah);
-      if (rata2 >= 85) {
+        int L = 0;
+        for (int i = 0; i < nilaiMhs.length; i++) {
+            if (nilaiMhs[i] > 70) {
+                L++;
+            }
+        System.out.println("Jumlah mahasiswa yang lulus: " + L);
+        }
+        if (rata2 >= 85) {
             System.out.println("SANGAT BAIK");
         } else if (rata2 >= 70) {
             System.out.println("BAIK");
