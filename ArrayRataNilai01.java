@@ -10,13 +10,6 @@ public class ArrayRataNilai01 {
             System.out.print("Masukan nilai mahasiswa ke-" + (i + 1) + ":");
             nilaiMhs[i] = sc.nextInt();
             total += nilaiMhs[i];
-            if (nilaiMhs[i] >= 85) {
-            System.out.println("SANGAT BAIK");
-        } else if (nilaiMhs[i] >= 70) {
-            System.out.println("BAIK");
-        } else {
-            System.out.println("PERLU PENDAMPINGAN");
-        }
         }
         rata2 = (double) total / nilaiMhs.length;
         System.out.println("Total nilai: " + total);
@@ -29,6 +22,13 @@ public class ArrayRataNilai01 {
         }
         System.out.println("Nilai tertinggi: " + tertinggi);
         System.out.println("Nilai terendah: " + terendah);
+      if (rata2 >= 85) {
+            System.out.println("SANGAT BAIK");
+        } else if (rata2 >= 70) {
+            System.out.println("BAIK");
+        } else {
+            System.out.println("PERLU PENDAMPINGAN");
+        }
         sc.close();
     }
 }
