@@ -12,6 +12,6 @@ public class SortNilai01 {
                 }
             }
         }
-        System.out.println("Setelah diurutkan: " + Arrays.toString(nilai));
+        System.out.println(Arrays.toString(nilai));
     }
 }
