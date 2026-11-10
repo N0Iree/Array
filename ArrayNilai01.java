@@ -9,11 +9,18 @@ public class ArrayNilai01 {
             System.out.print("Masukan nilai mahasiswa ke-" + (i + 1) + ":");
             nilaiAkhir[i] = sc.nextInt();
         }
+        int G = 0;
+        int L = 0;
         for (int i = 0; i < nilaiAkhir.length; i++) {
             if (nilaiAkhir[i] >= 70) {
-            System.out.println("Mahasiswa ke-" + (i + 1) + ": " + nilaiAkhir[i] + " (" + status + ")");
+                G++;
+                System.out.println("Mahasiswa ke-" + (i + 1) + ": " + nilaiAkhir[i] + " (" + status + ")");
+            } else {
+                L++;
             }
         }
+        System.out.println("Jumlah mahasiswa yang lulus: " + G);
+        System.out.println("Jumlah mahasiswa yang tidak lulus: " + L);
         sc.close();
     }
 }
